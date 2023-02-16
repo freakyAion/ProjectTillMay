@@ -3,32 +3,68 @@
 
 }
 
+/* 
+    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Poppins', sans-serif;   
+*/
+
 header{
     height: 1100px;
+    background-color: #fff;
+
+}
+
+
+.roof{
+    display: flex;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    height: 53px;
+    width: 244px;
+    margin-left: 164px;
+    margin-top: 38px;
+
+    font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.logo p{
+    margin-left: 20px;
 
 }
 
 .offers{
     height: 1230px;
+    background-color: #F8F8FA;
 
 }
 
 .temp_class_1{
     height: 930px;
-
+    background-color: #fff;
+    
 }
 
 .temp_class_2{
     height: 1450px;
-
+    background-color: #060928;
+    
 }
 
 .temp_class_3{
     height: 1285px;
-
+    background-color: #fff;
+    
 }
 
 .cellar{
     height: 2445px;
+    background-color: #3456FE;
 
 }
