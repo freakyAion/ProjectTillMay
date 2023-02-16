@@ -18,20 +18,24 @@ header{
 .roof{
     display: flex;
 
+    height: 112px;
+    width: 1100px;
 }
 
 .logo{
     display: flex;
     align-items: center;
 
-    height: 53px;
-    width: 244px;
+    height: 40px;
+    width: 183px;
+    
     margin-left: 164px;
     margin-top: 38px;
 
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: bold;
-    font-size: 26px;
+    font-size: 20px;
+
 }
 
 .logo p{
@@ -39,32 +43,47 @@ header{
 
 }
 
+.roof .menu ul{
+    display: flex;
+    align-items: center;
+    
+    margin-left: 422px;
+    margin-top: 47px;
+    
+    
+    font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
+    font-weight: 500;
+    font-size: 15px;
+
+    list-style: none;
+}
+
+.roof .menu ul li{
+    margin-left: 36px;
+
+}
+
 .offers{
-    height: 1230px;
     background-color: #F8F8FA;
 
 }
 
 .temp_class_1{
-    height: 930px;
     background-color: #fff;
     
 }
 
 .temp_class_2{
-    height: 1450px;
     background-color: #060928;
     
 }
 
 .temp_class_3{
-    height: 1285px;
     background-color: #fff;
     
 }
 
 .cellar{
-    height: 2445px;
     background-color: #3456FE;
 
 }
