@@ -77,10 +77,14 @@ section{
 }
 
 
-.banner .text{
-    margin-left: 15px;
+.banner{
+    display: flex;
 
-    
+}
+
+.banner .text{
+    margin-top: 155px;
+
     width: 524px;
 
 }
@@ -91,7 +95,7 @@ section{
     font-size: 48px;
 
     margin-bottom: 35px;
-
+    width: 524px;
 }
 
 .banner .text p{
@@ -118,13 +122,18 @@ section{
 
     background-color: #3456FE;
     color: #fff;
+    box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
 }
 
-.banner .text. .button p{
+.banner .text .button p{
     margin-bottom: 0;
     
 }
     
+.banner img{
+    margin-left: 56px;
+   
+}
 
 .offers{
     background-color: #F8F8FA;
