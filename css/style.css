@@ -137,10 +137,19 @@ section{
 
 /*___*/
 
-.offers, .catalogue{
+.offers_bg{
     background-color: #F8F8FA;
+    
+}
+
+.offers, .catalogue{
     display: flex;
 
+}
+
+.offers{
+    padding-top: 100px;
+    
 }
 
 .offers h2{
@@ -150,6 +159,9 @@ section{
 
     width: 432px;
     height: 92px;
+
+    margin-left: 26px;
+    margin-top: 16px;
 }
 
 .offers p{
@@ -160,6 +172,7 @@ section{
     width: 506px;
     height: 104px;
 
+    margin-left: 163px;
 }
 
 .catalogue{
