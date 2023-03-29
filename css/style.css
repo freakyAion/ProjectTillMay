@@ -1,5 +1,21 @@
 *{
     margin: 0;
+    text-decoration: none;
+}
+
+.links{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.links:visited{
+    color: #000;
+
+}
+
+.links:hover, .links:focus{
+    color: #555;
 
 }
 
@@ -125,6 +141,20 @@ section{
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
 }
 
+.banner .text .button:visited{
+    background-color: #3456FE;
+    color: #fff;
+    box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
+    text-decoration: none;
+
+}
+
+.banner .text .button:hover/*, .button:focus*/{
+    animation: 1s ease-in-out alternate-reverse;
+    background-color: #a2b2ff;
+
+}
+
 .banner .text .button p{
     margin-bottom: 0;
     
@@ -149,6 +179,7 @@ section{
 
 .offers{
     padding-top: 100px;
+    margin-bottom: 42px;
     
 }
 
@@ -179,6 +210,33 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+}
+
+.item img{
+    padding-bottom: 7px;
+
+}
+
+.item:hover, .item:focus{
+
+
+}
+
+.item .text{
+    font-family: 'Montserrat', 'Poppins', 'Arial', sans-serif; 
+    color: #000;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.item .title{
+    font-weight: 700;
+
+}
+
+.item{
+    color: #000;
 
 }
 
