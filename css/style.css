@@ -111,6 +111,7 @@ section{
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: bold;
     font-size: 48px;
+    line-height: 128.5%;
 
     margin-bottom: 35px;
     width: 524px;
@@ -120,6 +121,7 @@ section{
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: 500;
     font-size: 18px;
+    line-height: 158.5%;
 
     margin-bottom: 52px;
 
@@ -171,8 +173,9 @@ section{
 
 .offers_bg{
     background-color: #F8F8FA;
-    
+
 }
+
 
 .offers, .catalogue{
     display: flex;
@@ -189,6 +192,7 @@ section{
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: bold;
     font-size: 38px;
+    line-height: 120%;
 
     width: 432px;
     height: 92px;
@@ -201,6 +205,7 @@ section{
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: 400;
     font-size: 18px;
+    line-height: 158.5%;
 
     width: 506px;
     height: 104px;
@@ -212,6 +217,15 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+
+    margin-top: 38px; 
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -242,40 +256,41 @@ section{
 
 }
 
-.temp_class_1{
+.white_block{
     background-color: #fff;
-    
+    display: flex;
+    flex-direction: row;
 }
 
-.temp_class_1 h3{
+.white_block h3{
     font-family: var(--poppins);
     font-size: 38px;
     font-weight: 700;
     
 }
 
-.temp_class_1 h3{
+.white_block h3{
     font-family: var(--poppins);
     font-size: 38px;
     font-weight: 700;
     
 }
 
-.temp_class_1 h4{
+.white_block h4{
     font-family: var(--montserat);
     font-size: 24px;
     font-weight: 700;
     
 }
 
-.temp_class_1 p{
+.white_block p{
     font-family: var(--poppins);
     font-size: 17px;
     font-weight: 400;
     
 }
 
-.temp_class_1 .button{
+.white_block .button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,7 +308,7 @@ section{
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
 }
 
-.temp_class_1 .button:visited{
+.white_block .button:visited{
     background-color: #3456FE;
     color: #fff;
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
@@ -301,13 +316,13 @@ section{
 
 }
 
-.temp_class_1 .button:hover/*, .button:focus*/{
+.white_block .button:hover/*, .button:focus*/{
     animation: 1s ease-in-out alternate-reverse;
     background-color: #a2b2ff;
 
 }
 
-.temp_class_1 .button p{
+.white_block .button p{
     margin-bottom: 0;
     
 }
