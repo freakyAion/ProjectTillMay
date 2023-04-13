@@ -1,6 +1,9 @@
 *{
     margin: 0;
     text-decoration: none;
+
+    --montserat: 'Montserrat', sans-serif; 
+    --poppins: 'Poppins', sans-serif;
 }
 
 .links{
@@ -24,10 +27,9 @@
 
 }
 
-/* 
-    font-family: 'Montserrat', sans-serif; 
-    font-family: 'Poppins', sans-serif;   
-*/
+ 
+       
+
 
 header, main, footer{
     height: 100%;
@@ -242,6 +244,71 @@ section{
 
 .temp_class_1{
     background-color: #fff;
+    
+}
+
+.temp_class_1 h3{
+    font-family: var(--poppins);
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+
+.temp_class_1 h3{
+    font-family: var(--poppins);
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+
+.temp_class_1 h4{
+    font-family: var(--montserat);
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
+.temp_class_1 p{
+    font-family: var(--poppins);
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+.temp_class_1 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Montserrat', 'Poppins', 'Arial', sans-serif; 
+    font-weight: bold;
+    font-size: 20px;
+
+    width: 200px;
+    height: 50px;
+
+
+    background-color: #3456FE;
+    color: #fff;
+    box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
+}
+
+.temp_class_1 .button:visited{
+    background-color: #3456FE;
+    color: #fff;
+    box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
+    text-decoration: none;
+
+}
+
+.temp_class_1 .button:hover/*, .button:focus*/{
+    animation: 1s ease-in-out alternate-reverse;
+    background-color: #a2b2ff;
+
+}
+
+.temp_class_1 .button p{
+    margin-bottom: 0;
     
 }
 
