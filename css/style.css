@@ -6,6 +6,21 @@
     --poppins: 'Poppins', sans-serif;
 }
 
+:root{
+    --logo: #FE8934;
+    --background_offwhite: #D9D9D9;
+    --background_darkblue: #060928;
+    --background_blue: #3456FE;
+    --background_blue--active: #8191e2;
+    --font_montserrat: 'Montserrat', 'Poppins', sans-serif;
+    --font_poppins: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.CapsLock{
+    text-transform: uppercase;
+
+}
+
 .links{
     text-decoration: none;
     color: #000;
@@ -31,7 +46,7 @@
        
 
 
-header, main, footer{
+body, header, main, footer{
     height: 100%;
     background-color: #fff;
 
@@ -40,6 +55,119 @@ header, main, footer{
 section{
     width: 100%;
 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header section{
+    height: 112px;
+    width: 1110px;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+
+    align-items: center;    
+
+    position: relative;
+
+    width: 182px;
+    max-width: 182px;
+    height: 40px;
+    max-height: 40px;
+
+    text-decoration: none;
+    color: black
+}
+
+.logo img,
+.logo h1{
+    transition: scale 200ms ease-in-out;
+
+}
+
+.logo img{
+    position: absolute;
+
+    width: 40px;
+    max-width: 40px;
+    height: 40px;
+    max-height: 40px;
+}
+
+.logo h1{
+    position: absolute;
+    right: 0;
+
+    font-family: var(--font_poppins);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.logo:focus,
+.logo img:hover,
+.logo h1:hover{
+    scale: 1.05;
+    transition: scale 200ms ease-in-out;
+}
+
+.menu{
+    justify-self: flex-end;
+
+    position: absolute;
+    right: 0;
+
+    font-family: var(--font_poppins);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    
+
+    /*display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 36px;*/
+}
+
+.menu li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+
+    padding: 17.5px;
+
+    transition: font-weight 200ms ease-in-out,
+                font-style 200ms ease-in-out;
+
+}
+
+.menu li a:focus,
+.menu li a:hover{
+    font-weight: 650;
+
+    font-style: italic;
+
+    transition: font-weight 200ms ease-in-out
+                font-style 200ms ease-in-out;
 }
 
 .container{
@@ -174,6 +302,7 @@ section{
 .offers_bg{
     background-color: #F8F8FA;
 
+    padding-bottom: 66px;
 }
 
 
@@ -260,6 +389,13 @@ section{
     background-color: #fff;
     display: flex;
     flex-direction: row;
+
+    padding-top: 34px;
+}
+
+.white_block .text{
+    margin-left: 164px;
+
 }
 
 .white_block h3{
@@ -267,13 +403,7 @@ section{
     font-size: 38px;
     font-weight: 700;
     
-}
-
-.white_block h3{
-    font-family: var(--poppins);
-    font-size: 38px;
-    font-weight: 700;
-    
+    margin-bottom: 154px;
 }
 
 .white_block h4{
@@ -281,13 +411,17 @@ section{
     font-size: 24px;
     font-weight: 700;
     
+    margin-bottom: 40px;
 }
 
 .white_block p{
     font-family: var(--poppins);
     font-size: 17px;
     font-weight: 400;
+
+    max-width: 344px;
     
+    margin-bottom: 34px;
 }
 
 .white_block .button{
@@ -325,6 +459,11 @@ section{
 .white_block .button p{
     margin-bottom: 0;
     
+}
+
+.white_block .images{
+    margin-top: 184px;
+
 }
 
 .temp_class_2{
