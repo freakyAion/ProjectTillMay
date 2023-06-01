@@ -115,10 +115,15 @@ header section{
 }
 
 .logo:focus,
-.logo img:hover,
 .logo h1:hover{
     scale: 1.05;
     transition: scale 200ms ease-in-out;
+}
+
+.logo img:hover{
+    scale: 1.10;
+    transition: scale 200ms ease-in-out;
+
 }
 
 .menu{
@@ -136,6 +141,7 @@ header section{
 
     display: flex;
 
+    flex-grow: 0;
     justify-content: flex-end;
     align-items: center;
 
@@ -148,6 +154,11 @@ header section{
     grid-gap: 36px;*/
 }
 
+.menu li{
+    transition: transform 200ms ease-in-out;
+
+}
+
 .menu li a{
     text-decoration: none;
     text-transform: capitalize;
@@ -155,19 +166,27 @@ header section{
 
     padding: 17.5px;
 
-    transition: font-weight 200ms ease-in-out,
-                font-style 200ms ease-in-out;
+    transition: font-style 200ms ease-in-out;
 
 }
 
-.menu li a:focus,
-.menu li a:hover{
-    font-weight: 650;
+.menu li:hover{
+    transform: scale(1.05);
+    transition: transform 200ms ease-in-out;
 
+}
+
+.menu li:hover a{
     font-style: italic;
 
-    transition: font-weight 200ms ease-in-out
-                font-style 200ms ease-in-out;
+    transition: font-style 200ms ease-in-out;
+                
+}
+
+.menu li a:focus{
+    font-style: italic;
+
+
 }
 
 .container{
@@ -188,8 +207,6 @@ header section{
 
     height: 40px;
     width: 183px;
-
-    margin-top: 38px;
 
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: bold;
@@ -267,7 +284,6 @@ header section{
     width: 200px;
     height: 50px;
 
-
     background-color: #3456FE;
     color: #fff;
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
@@ -281,8 +297,9 @@ header section{
 
 }
 
+.banner .text .button:focus,
 .banner .text .button:hover/*, .button:focus*/{
-    animation: 1s ease-in-out alternate-reverse;
+    transition: background-color 200ms ease-in-out;
     background-color: #a2b2ff;
 
 }
@@ -356,6 +373,8 @@ header section{
     align-items: center;
     justify-content: center;
 
+    transition: scale 200ms linear;
+
 }
 
 .item img{
@@ -363,8 +382,10 @@ header section{
 
 }
 
-.item:hover, .item:focus{
-
+.item:hover, 
+.item:focus{
+    scale: 1.05;
+    transition: scale 200ms linear;
 
 }
 
@@ -385,20 +406,27 @@ header section{
 
 }
 
-.white_block{
+.demo{
     background-color: #fff;
-    display: flex;
-    flex-direction: row;
 
     padding-top: 34px;
+
+    width: 1110px;
+
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.white_block .text{
-    margin-left: 164px;
+.demo .text{
+    margin-left: 15px;
+    margin-right: 37px;
+
+    width: 403px;
 
 }
 
-.white_block h3{
+.demo h3{
     font-family: var(--poppins);
     font-size: 38px;
     font-weight: 700;
@@ -406,7 +434,7 @@ header section{
     margin-bottom: 154px;
 }
 
-.white_block h4{
+.demo h4{
     font-family: var(--montserat);
     font-size: 24px;
     font-weight: 700;
@@ -414,7 +442,7 @@ header section{
     margin-bottom: 40px;
 }
 
-.white_block p{
+.demo p{
     font-family: var(--poppins);
     font-size: 17px;
     font-weight: 400;
@@ -424,7 +452,7 @@ header section{
     margin-bottom: 34px;
 }
 
-.white_block .button{
+.demo .button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +470,7 @@ header section{
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
 }
 
-.white_block .button:visited{
+.demo .button:visited{
     background-color: #3456FE;
     color: #fff;
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
@@ -450,20 +478,21 @@ header section{
 
 }
 
-.white_block .button:hover/*, .button:focus*/{
+.demo .button:hover/*, .button:focus*/{
     animation: 1s ease-in-out alternate-reverse;
     background-color: #a2b2ff;
 
 }
 
-.white_block .button p{
+.demo .button p{
     margin-bottom: 0;
     
 }
 
-.white_block .images{
+.demo .images img{
     margin-top: 184px;
-
+    
+    width: 616px;
 }
 
 .temp_class_2{
