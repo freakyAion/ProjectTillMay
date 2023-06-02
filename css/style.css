@@ -1,9 +1,6 @@
 *{
     margin: 0;
     text-decoration: none;
-
-    --montserat: 'Montserrat', sans-serif; 
-    --poppins: 'Poppins', sans-serif;
 }
 
 :root{
@@ -330,7 +327,7 @@ header section{
 
 .offers{
     padding-top: 100px;
-    margin-bottom: 42px;
+    padding-bottom: 42px;
     
 }
 
@@ -427,7 +424,7 @@ header section{
 }
 
 .demo h3{
-    font-family: var(--poppins);
+    font-family: var(--font_poppins);
     font-size: 38px;
     font-weight: 700;
     
@@ -435,7 +432,7 @@ header section{
 }
 
 .demo h4{
-    font-family: var(--montserat);
+    font-family: var(--font_montserrat);
     font-size: 24px;
     font-weight: 700;
     
@@ -443,7 +440,7 @@ header section{
 }
 
 .demo p{
-    font-family: var(--poppins);
+    font-family: var(--font_poppins);
     font-size: 17px;
     font-weight: 400;
 
@@ -468,6 +465,9 @@ header section{
     background-color: #3456FE;
     color: #fff;
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
+
+    transition: background-color 200ms ease-in-out;
+
 }
 
 .demo .button:visited{
@@ -476,11 +476,14 @@ header section{
     box-shadow: 15px 15px 30px rgba(49, 78, 221, 0.25);
     text-decoration: none;
 
-}
 
-.demo .button:hover/*, .button:focus*/{
+}
+.demo .button:focus,
+.demo .button:hover{
     animation: 1s ease-in-out alternate-reverse;
     background-color: #a2b2ff;
+
+    transition: background-color 200ms ease-in-out;
 
 }
 
@@ -495,9 +498,37 @@ header section{
     width: 616px;
 }
 
-.temp_class_2{
+.interior_showcase{
     background-color: #060928;
+    color: #fff;
+    padding-top: 42px; 
+}
+
+.interior_showcase h3{
+    font-family: var(--font_poppins);
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
     
+
+    width: 403px;
+}
+
+.interior_showcase h4{
+    font-family: var(--font_montserrat);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 126%;
+
+}
+
+.interior_showcase p{
+    font-family: var(--font_poppins);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 158.5%;
+
+
 }
 
 .temp_class_3{
@@ -509,3 +540,4 @@ header section{
     background-color: #3456FE;
 
 }
+
