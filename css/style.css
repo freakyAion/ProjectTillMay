@@ -41,7 +41,14 @@
 
  
        
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    flex-direction: column;
+
+}
 
 body, header, main, footer{
     height: 100%;
@@ -61,7 +68,6 @@ header{
     display: flex;
     justify-content: center;
 
-    background-color: red;
 }
 
 header section{
@@ -177,7 +183,7 @@ header section{
 .menu li:hover{
     color: var(--background_blue);
     transform: scale(1.10);
-    transition: transform 200ms ease-in-out
+    transition: transform 200ms ease-in-out,
                 color 200ms ease-in-out;
 
 }
@@ -416,7 +422,7 @@ header section{
     font-size: 17px;
     font-weight: 400;
 
-    max-width: 344px;
+    width: 344px;
     
     margin-bottom: 34px;
 }
@@ -642,22 +648,19 @@ header section{
 .slider .slider-content .JavaSlider .left{
     transform: translateX(-955px);
     transition: transform 1500ms ease-in-out;
-
-    z-index: 0;
+    z-index: 1;
 }
 
 .slider .slider-content .JavaSlider .current{
-    z-index: 4;
 
     transition: transform 1500ms ease-in-out;
-
+    z-index: 2;
 }
 
 .slider .slider-content .JavaSlider .right{
     transform: translateX(955px);
     transition: transform 1500ms ease-in-out;
-
-    z-index: 0;
+    z-index: 3;
 }
 
 .slider .slider-content .buttons{
@@ -970,10 +973,259 @@ header section{
 }
 .list ul li:hover{
     transform: translateX(10px) scale(1.1);
-    transition: transform 250ms linear,
+    transition: transform 250ms linear;
 }
 
 .cellar .cellar-bottom .cellar-bottom-right .partners{
     padding-left: 72px;
 
+}
+
+@media (max-width: 1110px) {
+    .container{
+        width: 900px;
+
+    }
+    header section{
+        width: 900px;
+
+    }
+    .catalogue img{
+        width: 250px;
+    }
+    .demo h3{
+        font-size: 35px;
+        margin-bottom: 70px;
+    }
+    .interior_showcase .images{
+        margin-left: 127px;
+        width: 800px;
+    }
+    .interior_showcase .images a img{
+        width: 175px;
+    }
+    .cellar-bottom-right{
+        padding-left: 50px !important;
+
+    }
+}
+
+@media (max-width: 925px) {
+    .container{
+        width: 700px;
+
+    }
+    header section{
+        width: 700px;
+
+    }
+    .menu li a{
+        padding: 17.5px 5px ;
+
+    }
+    .banner img{
+        display: none;
+    }
+    .offers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .offers h2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .offers p{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px
+    }
+    .catalogue img{
+        width: 200px;
+    }
+    .demo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .demo .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 40px
+    }
+    .demo h3{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .demo h4{
+        margin-bottom: 0;
+    }
+    .demo .text p{
+        margin: 20px 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    .demo img{
+        margin-top: 20px !important;
+    }
+    .interior_showcase{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .interior_showcase .interior h3, 
+    .interior_showcase .interior h4,
+    .interior_showcase .interior .text,
+    .interior_showcase .interior .button{
+        margin: 10px 0;
+    }
+    .interior_showcase .images{
+        margin-left: 0;
+        margin-top: 0;
+        padding: 20px 0;
+        width: 700px;
+    }
+    .interior_showcase .images a img{
+        width: 150px;
+    }
+    .interior_showcase .outerImage{
+        display: none;
+    }
+    .slider .slider-content .JavaSlider{
+        height: 400px;   
+
+    }
+    .slider .slider-content .JavaSlider .buttons,
+    .slider .slider-content .JavaSlider,
+    .slider .slider-content .JavaSlider img{
+        width: 600px;
+    }
+    .slider .slider-content .JavaSlider .buttons button{
+        height: 352px;
+    }
+    .slider .slider-content .JavaSlider .left{
+        transform: translateX(-120%);
+    }
+    .slider .slider-content .JavaSlider .right{
+        transform: translateX(120%);
+    }
+    .cellar-bottom-right{
+        padding-left: 50px !important;
+        flex-direction: column;
+
+    }
+    .partners{
+        padding-left: 0 !important;
+    }
+}
+@media (max-width: 925px) {
+    .slider{
+        display: none;
+    }
+    .images{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 720px) {
+    .slider{
+        display: none;
+    }
+    .images{
+        margin-bottom: 30px;
+    }
+    .container{
+        width: 300px;
+
+    }
+    header section{
+        width: 300px;
+        height: 200px;
+        position: static;
+
+        
+
+    }
+    .menu{
+        flex-direction: column;
+        position: static;
+        
+    }
+    .banner{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .banner .text h1{
+        width: 300px;
+    }
+    .banner .text p{
+        width: 300px;
+    }
+    .banner .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .offers_bg{
+        display: none;
+    }
+    .demonstration .demo .text h3,
+    .demonstration .demo .text h4,
+    .demonstration .demo .text p,
+    .interior_showcase .interior h3,
+    .interior_showcase .interior h4,
+    .interior_showcase .interior .text{
+        width: 300px;
+    }
+    .interior_showcase .interior .images{
+        display: none;
+    }
+    .cellar .cellar-bottom .submit{
+        width: 300px;
+        height: 450px;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cellar .cellar-bottom .submit h3{
+        margin: 0;
+    }
+    .cellar .cellar-bottom .submit .text{
+        display: none;
+    }
+    .cellar .cellar-bottom .submit form{
+        margin: 10px;
+        width: 300px;
+        
+    }
+    .cellar .cellar-bottom .submit form #text{
+        width: 200px;
+        margin: 0 20px;
+    }
+    .cellar .cellar-bottom .submit form #button{
+        position: static;
+        margin: 0 20px;
+        margin-top: 60px;
+    }
+    .cellar .cellar-bottom{
+        flex-direction: column;
+    }
+    .cellar .cellar-bottom .cellar-bottom-left .text{
+        display: none;
+    }
 }
