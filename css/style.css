@@ -703,7 +703,7 @@ header section{
 
 }
 
-.slider .slider-content .buttons button p{
+.slider .slider-content .buttons button span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -716,8 +716,8 @@ header section{
 
 }
 
-.slider .slider-content .buttons button:focus p,
-.slider .slider-content .buttons button:hover p{
+.slider .slider-content .buttons button:focus span,
+.slider .slider-content .buttons button:hover span{
     transform: scale(1.5);
     transition: all 300ms linear;
 }
@@ -819,6 +819,7 @@ header section{
     font-size: 20px;
     line-height: 158.5%;
 
+    margin-left: 81px;
     color: white;
 
     width: 495px;
