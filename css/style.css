@@ -226,7 +226,7 @@ header section{
 
 }
 
-.banner .text h1{
+.banner .text h2{
     font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif; 
     font-weight: bold;
     font-size: 48px;
@@ -401,7 +401,7 @@ header section{
 
 }
 
-.demo h3{
+.demo h2{
     font-family: var(--font_poppins);
     font-size: 38px;
     font-weight: 700;
@@ -492,7 +492,7 @@ header section{
 }
 
 
-.interior_showcase .interior h3{
+.interior_showcase .interior h2{
     font-family: var(--font_poppins);
     font-weight: 700;
     font-size: 38px;
@@ -611,7 +611,7 @@ header section{
 
 }
 
-.slider .slider-content h3{
+.slider .slider-content h2{
     font-family: var(--font_montserrat);
     
     font-weight: 700;
@@ -801,7 +801,7 @@ header section{
     
 }
 
-.cellar .cellar-bottom .submit h3{
+.cellar .cellar-bottom .submit h2{
     font-family: var(--font_montserrat);
     
     font-weight: 700;
@@ -993,7 +993,7 @@ header section{
     .catalogue img{
         width: 250px;
     }
-    .demo h3{
+    .demo h2{
         font-size: 35px;
         margin-bottom: 70px;
     }
@@ -1061,7 +1061,7 @@ header section{
         text-align: center;
         margin: 0 40px
     }
-    .demo h3{
+    .demo h2{
         font-size: 35px;
         margin-bottom: 20px;
     }
@@ -1083,7 +1083,7 @@ header section{
         align-items: center;
         
     }
-    .interior_showcase .interior h3, 
+    .interior_showcase .interior h2, 
     .interior_showcase .interior h4,
     .interior_showcase .interior .text,
     .interior_showcase .interior .button{
@@ -1165,7 +1165,7 @@ header section{
         text-align: center;
 
     }
-    .banner .text h1{
+    .banner .text h2{
         width: 300px;
     }
     .banner .text p{
@@ -1181,10 +1181,10 @@ header section{
     .offers_bg{
         display: none;
     }
-    .demonstration .demo .text h3,
+    .demonstration .demo .text h2,
     .demonstration .demo .text h4,
     .demonstration .demo .text p,
-    .interior_showcase .interior h3,
+    .interior_showcase .interior h2,
     .interior_showcase .interior h4,
     .interior_showcase .interior .text{
         width: 300px;
@@ -1202,7 +1202,7 @@ header section{
         justify-content: center;
         align-items: center;
     }
-    .cellar .cellar-bottom .submit h3{
+    .cellar .cellar-bottom .submit h2{
         margin: 0;
     }
     .cellar .cellar-bottom .submit .text{
