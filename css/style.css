@@ -990,6 +990,12 @@ header section{
         width: 900px;
 
     }
+    .banner img{
+        display: none;
+    }
+    .banner .text{
+        margin-bottom: 100px;
+    }
     .catalogue img{
         width: 250px;
     }
@@ -1034,6 +1040,7 @@ header section{
     }
     .banner .text{
         margin-top: 100px;
+        margin-bottom: 100px;
     }
     .offers{
         display: flex;
