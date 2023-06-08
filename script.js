@@ -1,5 +1,3 @@
-'use strict'
-
 const arrowLeft = document.querySelector(".left-button");
 const arrowRight = document.querySelector(".right-button");
 

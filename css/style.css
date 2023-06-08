@@ -1019,12 +1019,21 @@ header section{
         width: 700px;
 
     }
+    .menu{
+        height: 200px;
+    }
+    .menu li{
+        margin: 5px 0;
+    }
     .menu li a{
-        padding: 17.5px 5px ;
+        height: 16px;
 
     }
     .banner img{
         display: none;
+    }
+    .banner .text{
+        margin-top: 20px;
     }
     .offers{
         display: flex;
